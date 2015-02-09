@@ -147,6 +147,8 @@
     <StudyBrowserFiles Include="$(TrunkDirectory)\ImageViewer\Explorer\Local\View\WinForms\bin\$(Configuration)\ClearCanvas.ImageViewer.Explorer.Local.View.WinForms.dll" />
     <StudyBrowserFiles Include="$(TrunkDirectory)\ImageViewer\Explorer\Dicom\bin\$(Configuration)\ClearCanvas.ImageViewer.Explorer.Dicom.dll" />
     <StudyBrowserFiles Include="$(TrunkDirectory)\ImageViewer\Explorer\Dicom\View\WinForms\bin\$(Configuration)\ClearCanvas.ImageViewer.Explorer.Dicom.View.WinForms.dll" />
+    <StudyBrowserFiles Include="$(TrunkDirectory)\ImageViewer\Explorer\Twain\bin\$(Configuration)\ClearCanvas.ImageViewer.Explorer.Twain.dll" />
+    <StudyBrowserFiles Include="$(TrunkDirectory)\ImageViewer\Explorer\Twain\View\WinForms\bin\$(Configuration)\ClearCanvas.ImageViewer.Explorer.Twain.View.WinForms.dll" />
   </ItemGroup>
 
   <ItemGroup>

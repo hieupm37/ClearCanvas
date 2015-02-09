@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ClearCanvas.ImageViewer.Explorer.Twain.View.WinForms" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ToolbarIconSize" Type="ClearCanvas.Desktop.IconSize" Scope="User">
+      <Value Profile="(Default)">Medium</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
