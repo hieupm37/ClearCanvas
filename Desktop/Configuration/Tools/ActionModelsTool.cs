@@ -39,7 +39,7 @@ using ClearCanvas.Desktop.Tools;
 namespace ClearCanvas.Desktop.Configuration.Tools
 {
 	[MenuAction("configure", "global-menus/MenuTools/MenuUtilities/Configure Action Model", "Configure")]
-	[ExtensionOf(typeof (DesktopToolExtensionPoint))]
+	[ExtensionOf(typeof (DesktopToolExtensionPoint), Enabled=false)]  // TODO(hieupm37): review and consider enable it?
 	public sealed class ActionModelsTool : Tool<IDesktopToolContext>
 	{
 		public void Configure()

@@ -35,7 +35,7 @@ namespace ClearCanvas.ImageViewer.AdvancedImaging.Fusion.Tests
 	[MenuAction("alpha", "global-menus/MenuDebug/MenuFusion/(Async) Unload PET Volume", "DropThisVolume")]
 	[MenuAction("bravo", "global-menus/MenuDebug/MenuFusion/(Async) Unload Selected Fused Image", "DropThisSlice")]
 	[MenuAction("charlie", "global-menus/MenuDebug/MenuFusion/(Async) Unload Fused Display Set", "DropAllSlices")]
-	[ExtensionOf(typeof (ImageViewerToolExtensionPoint))]
+	[ExtensionOf(typeof (ImageViewerToolExtensionPoint), Enabled=false)]  // TODO(hieupm37): review
 	internal class AsynchronousFusionTestTool : ImageViewerTool
 	{
 		public void DropThisVolume()

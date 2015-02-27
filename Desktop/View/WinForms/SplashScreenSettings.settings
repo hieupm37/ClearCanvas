@@ -12,7 +12,7 @@
       <Value Profile="(Default)">Resources.Splash.png</Value>
     </Setting>
     <Setting Name="StatusVisible" Description="Specifies whether or not to show the status text (e.g. plugins loading)." Type="System.Boolean" Scope="Application">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="StatusLocation" Description="Location of the status text, in the coordinates of the splash screen window." Type="System.Drawing.Point" Scope="Application">
       <Value Profile="(Default)">295, 61</Value>

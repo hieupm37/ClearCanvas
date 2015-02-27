@@ -35,7 +35,7 @@ namespace ClearCanvas.Desktop.Configuration
 	/// </summary>
 	[MenuAction("activate", "global-menus/MenuTools/MenuUtilities/MenuConfigureSettings", "Activate")]
 	[ActionPermission("activate", AuthorityTokens.Desktop.SettingsManagement)]
-	[ExtensionOf(typeof(DesktopToolExtensionPoint))]
+	[ExtensionOf(typeof(DesktopToolExtensionPoint), Enabled=false)]  // TODO(hieupm37): review and consider enable it
 	public class SettingsManagementLaunchTool : Tool<IDesktopToolContext>
 	{
 		#region NullSettingsStore

@@ -32,7 +32,7 @@ namespace ClearCanvas.Desktop.ExtensionBrowser
 	[ActionPermission("show", AuthorityTokens.Desktop.ExtensionBrowser)]
 	[GroupHint("show", "Application.Browsing.Extensions")]
 
-    [ClearCanvas.Common.ExtensionOf(typeof(DesktopToolExtensionPoint))]
+    [ClearCanvas.Common.ExtensionOf(typeof(DesktopToolExtensionPoint), Enabled=false)]
     public class ExtensionBrowserTool : Tool<IDesktopToolContext>
 	{
 		private IShelf _shelf;

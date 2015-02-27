@@ -41,7 +41,8 @@ namespace ClearCanvas.ImageViewer.InteractiveGraphics.Tests
 	[MenuAction("spline", "global-menus/&Debug/Draw Spline", "DrawSpline")]
 	[MenuAction("toggleEnabled", "global-menus/&Debug/Enabled", "ToggleEnabled")]
 	//
-	[ExtensionOf(typeof (ImageViewerToolExtensionPoint))]
+    // TODO(hieupm37): enable it when support interactive drawing
+	[ExtensionOf(typeof (ImageViewerToolExtensionPoint), Enabled=false)]
 	internal class InteractiveGraphicsDemoTool : ImageViewerTool
 	{
 		public void DrawEllipse()

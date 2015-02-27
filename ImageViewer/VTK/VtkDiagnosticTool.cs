@@ -41,7 +41,8 @@ namespace ClearCanvas.ImageViewer.Vtk
 	[GroupHint("report", "Tools.Diagnostics.VTK.System")]
 	[VisibleStateObserver("report", "Enabled", null)]
 	//
-	[ExtensionOf(typeof (ImageViewerToolExtensionPoint))]
+    // TODO(hieupm37): enable if support VTK view
+	[ExtensionOf(typeof (ImageViewerToolExtensionPoint), Enabled=false)]
 	internal sealed class VtkDiagnosticTool : ImageViewerTool
 	{
 		public override void Initialize()

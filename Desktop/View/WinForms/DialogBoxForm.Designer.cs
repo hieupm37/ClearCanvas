@@ -63,28 +63,27 @@ namespace ClearCanvas.Desktop.View.WinForms
         /// </summary>
         private void InitializeComponent()
         {
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DialogBoxForm));
-			this._contentPanel = new System.Windows.Forms.Panel();
-			this.SuspendLayout();
-			// 
-			// _contentPanel
-			// 
-			resources.ApplyResources(this._contentPanel, "_contentPanel");
-			this._contentPanel.Name = "_contentPanel";
-
-			// 
-			// DialogBoxForm
-			// 
-			resources.ApplyResources(this, "$this");
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this._contentPanel);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "DialogBoxForm";
-			this.ShowInTaskbar = false;
-			this.Style = Crownwood.DotNetMagic.Common.VisualStyle.IDE2005;
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DialogBoxForm));
+            this._contentPanel = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
+            // 
+            // _contentPanel
+            // 
+            resources.ApplyResources(this._contentPanel, "_contentPanel");
+            this._contentPanel.Name = "_contentPanel";
+            // 
+            // DialogBoxForm
+            // 
+            resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this._contentPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "DialogBoxForm";
+            this.ShowInTaskbar = false;
+            this.Style = Crownwood.DotNetMagic.Common.VisualStyle.IDE2005;
+            this.ResumeLayout(false);
 
         }
 

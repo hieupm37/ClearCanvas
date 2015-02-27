@@ -33,6 +33,7 @@ using ClearCanvas.Desktop.Tools;
 using ClearCanvas.Desktop.Tables;
 using ClearCanvas.Server.ShredHost;
 using System.Threading;
+using ClearCanvas.Common.Utilities;
 
 namespace ClearCanvas.Server.ShredHostClientUI
 {

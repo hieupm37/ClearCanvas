@@ -423,7 +423,7 @@ namespace ClearCanvas.Common
 		private static string GetApplicationDataDirectory()
 		{
 			var path = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData);
-			path = Path.Combine(path, "ClearCanvas_Inc"); //TODO this seems to be derived from the AssemblyCompanyAttribute
+			path = Path.Combine(path, "TelemedVN"); //TODO this seems to be derived from the AssemblyCompanyAttribute
 			if (string.IsNullOrEmpty(ProductInformation.FamilyName))
 				path = Path.Combine(path, ProductInformation.GetName(true, false));
 			else

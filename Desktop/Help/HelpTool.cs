@@ -34,18 +34,22 @@ namespace ClearCanvas.Desktop.Help
 	[MenuAction("showAbout", "global-menus/MenuHelp/MenuAbout", "ShowAbout")]
 	[GroupHint("showAbout", "Application.Help.About")]
 
-	[MenuAction("showWebsite", "global-menus/MenuHelp/MenuWebsite", "ShowWebsite")]
-	[GroupHint("showWebsite", "Application.Help.Website")]
+    // TODO(hieupm37): add our website link
+    //[MenuAction("showWebsite", "global-menus/MenuHelp/MenuWebsite", "ShowWebsite")]
+    //[GroupHint("showWebsite", "Application.Help.Website")]
 
-	[MenuAction("showUsersGuide", "global-menus/MenuHelp/MenuUsersGuide", "ShowUsersGuide")]
-	[GroupHint("showUsersGuide", "Application.Help.UsersGuide")]
+    // TODO(hieupm37): create user-guide
+    //[MenuAction("showUsersGuide", "global-menus/MenuHelp/MenuUsersGuide", "ShowUsersGuide")]
+    //[GroupHint("showUsersGuide", "Application.Help.UsersGuide")]
 
-	[MenuAction("showLicense", "global-menus/MenuHelp/MenuLicense", "ShowLicense")]
-	[GroupHint("showLicense", "Application.Help.License")]
+    // TODO(hieupm37): create license
+    //[MenuAction("showLicense", "global-menus/MenuHelp/MenuLicense", "ShowLicense")]
+    //[GroupHint("showLicense", "Application.Help.License")]
 
-	[MenuAction("showLogs", "global-menus/MenuHelp/MenuShowLogs", "ShowLogs")]
-	[GroupHint("showLogs", "Application.Help.Support")]
-	[ActionPermission("showLogs", AuthorityTokens.Desktop.ShowLogs)]
+    // TODO(hieupm37): re-enable after rename
+    //[MenuAction("showLogs", "global-menus/MenuHelp/MenuShowLogs", "ShowLogs")]
+    //[GroupHint("showLogs", "Application.Help.Support")]
+    //[ActionPermission("showLogs", AuthorityTokens.Desktop.ShowLogs)]
 
 	[ExtensionOf(typeof(DesktopToolExtensionPoint))]
     public class HelpTool : Tool<IDesktopToolContext>

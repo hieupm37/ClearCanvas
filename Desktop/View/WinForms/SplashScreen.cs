@@ -263,7 +263,8 @@ namespace ClearCanvas.Desktop.View.WinForms
 
 		private void SetStatusText(string statusText)
 		{
-			_status.Text = statusText;
+            //_status.Text = statusText;  // TODO(hieupm37): enable when finish changing name
+            _status.Text = @"Loading...";
 		}
 
 		private void SetLicenseText(string licenseText)

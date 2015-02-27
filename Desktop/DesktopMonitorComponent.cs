@@ -39,7 +39,8 @@ namespace ClearCanvas.Desktop
     
     [MenuAction("launch", "global-menus/MenuTools/MenuUtilities/Desktop Monitor", "Launch")]
 
-    [ExtensionOf(typeof(DesktopToolExtensionPoint))]
+    // TODO(hieupm37): review and re-enable it?
+    [ExtensionOf(typeof(DesktopToolExtensionPoint), Enabled=false)]
     public class DesktopMonitorTool : Tool<IDesktopToolContext>
     {
         private Workspace _workspace;

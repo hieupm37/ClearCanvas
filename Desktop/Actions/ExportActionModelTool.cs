@@ -38,7 +38,7 @@ namespace ClearCanvas.Desktop.Actions
 	/// Exports the in-memory action model to a file.
 	/// </summary>
 	[MenuAction("apply", "global-menus/MenuTools/MenuUtilities/Export Action Model", "Apply")]
-	[ExtensionOf(typeof(DesktopToolExtensionPoint))]
+	[ExtensionOf(typeof(DesktopToolExtensionPoint), Enabled=false)]  // TODO(hieupm37): review and consider enable?
 	public class ExportActionModelTool : Tool<IDesktopToolContext>
 	{
 		internal void Apply()

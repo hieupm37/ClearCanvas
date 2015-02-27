@@ -30,7 +30,7 @@ using ClearCanvas.Desktop.Actions;
 namespace ClearCanvas.ImageViewer.Utilities.StudyFilters.Tests
 {
 	[MenuAction("assertSopRefs", "global-menus/&Debug/Study Filters - Assert SopRefs held", "AssertSopRefs")]
-	[ExtensionOf(typeof (StudyFilterToolExtensionPoint))]
+	[ExtensionOf(typeof (StudyFilterToolExtensionPoint), Enabled=false)]  // TODO(hieupm37): review it
 	internal class TestTool : StudyFilterTool
 	{
 		public void AssertSopRefs()

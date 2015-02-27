@@ -44,7 +44,7 @@ namespace ClearCanvas.ImageViewer.AdvancedImaging.Fusion.Tests
 	[MenuAction("setOverlay", "global-menus/MenuDebug/MenuFusion/Overlay Display Set", "SetOverlayDisplaySet")]
 	[MenuAction("setFusion", "global-menus/MenuDebug/MenuFusion/Fusion Display Set", "SetFusionDisplaySet")]
 	[MenuAction("assertFusion", "global-menus/MenuDebug/MenuFusion/Assert Fusion Results", "AssertFusionResults")]
-	[ExtensionOf(typeof (ImageViewerToolExtensionPoint))]
+	[ExtensionOf(typeof (ImageViewerToolExtensionPoint), Enabled=false)]  // TODO(hieupm37): review it
 	internal class TestDisplaySetsTool : ImageViewerTool
 	{
 		private TestDisplaySetGenerator _testDisplaySetGenerator;

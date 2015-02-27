@@ -493,7 +493,9 @@ namespace ClearCanvas.Desktop
 					return name;
 
 				var tagString = string.Join(" | ", tags.ToArray());
-				return string.IsNullOrEmpty(name) ? tagString : string.Format("{0} - {1}", name, tagString);
+                if (tagString != string.Empty)
+				    return string.IsNullOrEmpty(name) ? tagString : string.Format("{0} - {1}", name, tagString);
+                return string.IsNullOrEmpty(name) ? @"" : name;
 			}
 		}
 

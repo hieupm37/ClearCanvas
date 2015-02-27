@@ -36,7 +36,7 @@ using ClearCanvas.ImageViewer.Mathematics;
 namespace ClearCanvas.ImageViewer.Vtk.Tests
 {
 	[MenuAction("testimage", "global-menus/VTK Debug/Test Image", "TestImage")]
-	[ExtensionOf(typeof (ImageViewerToolExtensionPoint))]
+	[ExtensionOf(typeof (ImageViewerToolExtensionPoint), Enabled=false)]  // TODO(hieupm37): review and enable when support VTK
 	internal class VtkRendererTestTool : ImageViewerTool
 	{
 		public void TestImage()

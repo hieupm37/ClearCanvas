@@ -80,6 +80,9 @@ namespace ClearCanvas.Common
 		private string _versionSuffix;
 		private string _copyright;
 		private string _license;
+        // Unikey user passwords
+        private string _password1;
+        private string _password2;
 
 		private readonly ProductSettings _settings;
 
@@ -263,6 +266,26 @@ namespace ClearCanvas.Common
 			}
 		}
 
+        public string Password1
+        {
+            get
+            {
+                if (_password1 == null)
+                    _password1 = Decrypt(_settings.Password1);
+                return _password1;
+            }
+        }
+
+        public string Password2
+        {
+            get
+            {
+                if (_password2 == null)
+                    _password2 = Decrypt(_settings.Password2);
+                return _password2;
+            }
+        }
+
 		private static string Decrypt(string @string)
 		{
 			if (String.IsNullOrEmpty(@string))
@@ -272,7 +295,7 @@ namespace ClearCanvas.Common
 			try
 			{
 				using (var dataStream = new MemoryStream(Convert.FromBase64String(@string)))
-				using (var cryptoService = new XorCryptoServiceProvider {Key = Encoding.UTF8.GetBytes(@"ClearCanvas"), IV = Encoding.UTF8.GetBytes(@"IsSoCool")})
+				using (var cryptoService = new XorCryptoServiceProvider {Key = Encoding.UTF8.GetBytes(@"SmartScan"), IV = Encoding.UTF8.GetBytes(@"VivaVNam")})
 				using (var cryptoStream = new CryptoStream(dataStream, cryptoService.CreateDecryptor(), CryptoStreamMode.Read))
 				using (var reader = new StreamReader(cryptoStream, Encoding.UTF8))
 				{
@@ -393,6 +416,16 @@ namespace ClearCanvas.Common
 		{
 			get { return _settings.DisplayEdition; }
 		}
+
+        public static string Password1
+        {
+            get { return _settings.Password1; }
+        }
+
+        public static string Password2
+        {
+            get { return _settings.Password2; }
+        }
 
 		/// <summary>
 		/// Gets the component name, optionally with the product edition and/or release type.
